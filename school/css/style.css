@@ -1,0 +1,90 @@
+.operationbutton {
+	background-color: black;
+	border: none;
+	color: white;
+	font-size: 18px;
+	margin: 10px;
+	text-align: center;
+	display: block;
+	font-family: cursive;
+	width: 200px;
+	height: 50px;
+}
+
+
+/* customizing jquery dialog */
+.ui-dialog{
+  background: #fffff;
+  font-size: 1em;
+}
+.ui-widget-header {
+	background: blue;
+	color: white;
+	font-family: cursive;
+	font-size: 20px;
+}
+
+#addnewstudent {
+	font-family: cursive;
+	font-size: 20px;
+	
+}
+
+form input[type="text"] {
+	float: right;
+	right: 100px;
+	position: relative;	
+}
+form label {
+	float: left;
+	padding-left: 10px;
+	position: relative;
+}
+
+#std {
+	float: right;
+	right: 100px;
+	position: relative;
+	width: 250px;
+	
+}
+
+.heading {
+	font-family: cursive;
+	font-size: 28px;	
+	color: white;
+}
+
+table th {
+	color: black;
+}
+table, th,tr,td {
+	border: 2px groove black;
+	border-collapse: collapse;
+	font-family: cursive;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+
+table#studentlist td  {
+	color: white;
+}
+table#studentlist{
+	width: 1000px;
+	
+}
+
+div.functions {
+	float:left;
+	padding-top: 60px;
+	padding-right: 50px;
+}
+
+body {
+	background-image: url("file:///C:/Users/user-15/Desktop/hariharan/downloads/schoolbg.jpg");
+	
+	
+	 
+}

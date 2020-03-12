@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Worklogix Project - School</title>
+
+<!--Getting jquery libraries using CDN-->
+<script src="D:\hariharan\Java code\src\com\worklogix\training\jquery.js"></script>
+<script src="D:\hariharan\Java code\src\jquery-ui-1.12.1.custom\jquery-ui-1.12.1.custom\jquery-ui.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="D:\hariharan\Java code\src\jquery-ui-1.12.1.custom\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+<link rel="stylesheet" href="D:\hariharan\Java code\src\com\worklogix\training\school\css\style.css"/>
+<script src="D:\hariharan\Java code\src\com\worklogix\training\school\js\javascript.js"></script>
+</head>
+<body>
+
+<div class="functions">
+<input type="button" class="operationbutton" value="Add new student" id="add" />
+<input type="button" class="operationbutton" value="Delete student" id="delete"/>
+</div>
+<!-- Add new student form modal -->
+<div id="addnewstudent" title="Add new student">
+<form name="addstudentform">
+			<br/>
+			<label for="name">Student Name</label>
+			<input type="text" name="name" id="name" value=""/> <br/><br/><br/>
+			<label for="dob">Student Date Of Birth</label>
+			<input type="text" name="dob" id="dob" value=""> <br/><br/><br/>
+			<label for="fathername">Father name</label>	
+			<input type="text" name="fathername" id="fathername" value="">
+			
+			<br/><br/><br/>
+			<label for="mothername">Mother name</label>	
+			<input type="text" name="mothername" id="mothername" value="">
+			
+			<br/><br/><br/>
+			<label for="standard">Standard</label>	
+			<select id="std" name="standard">
+			<option>Select standard</option>
+			<optgroup label="Higher Secondary Class">
+			<option>XI</option>
+			<option>XII</option>
+			</optgroup>
+			<optgroup label="Higher Class">
+			<option>X</option>
+			<option>IX</option>
+			<option>VIII</option>
+			<option>VII</option>
+			<option>VI</option>
+			</optgroup>
+			<optgroup label="Primary Class">
+			<option>V</option>
+			<option>IV</option>
+			<option>III</option>
+			<option>II</option>
+			<option>I</option>
+			<option>UKG</option>
+			<option>LKG</option>
+			</optgroup>
+			</select>
+		
+</form>
+</div>
+
+<!-- Delete student form modal -->
+
+<div id="deletestudent" title="Delete Student">
+<form name="deletestudentform">
+<br/>
+			<label for="deletename">Enter Student name</label>
+			<input type="text" name="deletename" id="deletename" value=""/> <br/><br/><br/>
+			
+			
+</form>
+</div>
+
+<!-- Table to display added students -->
+
+<div class="heading">Added Student List</div>
+<br/>
+
+<table id="studentlist">
+<tr>
+<th>Name</th><th>Date of birth</th><th>Father Name</th><th>Mother Name</th><th>Standard</th>
+</tr>
+<tr><td>Rahul</td><td>01/02/2000</td><td>William</td><td>Jessica</td><td>X</td></tr>
+<tr><td>Thangam</td><td>10/07/1998</td><td>Collins</td><td>MaryJane</td><td>I</td></tr>
+<tr><td>Karthick</td><td>15/02/2002</td><td>Wilfred</td><td>Mariya</td><td>V</td></tr>
+<tr><td>Scott</td><td>18/09/1994</td><td>David</td><td>Alice</td><td>IX</td></tr>
+</table>
+
+</body>
+</html>
