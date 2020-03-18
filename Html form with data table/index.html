@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>index.html</title>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.js" type="text/javascript"></script>
+		<script src="jsfile.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h2>DATA TABLE IMPLEMENTATION</h2>
+		<hr/>
+		<br/>
+		<br/>
+		<table class="display" id="datatable"></table>
+		<input type="button" value="ADD USER" id="addUserButton" />
+		<input type="button" value="DELETE USER" id="deleteUserButton" />
+		<div id="formDisplayArea">
+			<h3 style="margin:10px">ADD USER FORM</h3>
+			<form id="userForm">
+				<table border="1" id="userFormTable">
+					<tr>
+						<td>First Name</td>
+						<td><input type="text" name="firstName" id="firstName" /></td>
+					</tr>
+					<tr>
+						<td>Last Name</td> 
+						<td><input type="text" name="lastname" id="lastName" /></td>
+					</tr>
+					<tr>
+						<td>Address</td> 
+						<td><textarea rows="5" name="address" id="address" ></textarea></td>
+					</tr>
+					<tr>
+						<td>Email</td> 
+						<td><input type="text" name="email" id="email" /></td>
+					</tr>
+					<tr>
+						<td>Mobile</td> 
+						<td><input type="text" name="mobileno" id="mobileno" /></td>
+					</tr>
+					<tr>
+						<td>Gender</td> 
+						<td><input type="radio" name="gender" value="male" id="male"/>Male <input type="radio" name="gender" value="female" id="female"/>Female</td>
+					</tr>
+					<tr>
+						<td>Age</td> 
+						<td><input type="text" name="age" id="age" /></td>
+					</tr>
+					<tr>
+						<td>Country</td> 
+						<td>
+							<select name="country" id="selectCountry" onChange="updateStates()">
+								<option value="United_States_Of_America">United_States_Of_America</option>
+								<option value="England">England</option>
+								<option value="Australia">Australia</option>
+								<option value="India">India</option>
+								<option value="South_Africa">South_Africa</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>States</td> 
+						<td>
+							<select name="state" id="selectState">
+								<option value="texas">Texas</option>
+								<option value="california">California</option>
+								<option value="kansas">Kansas</option>
+								<option value="sanfrancisco">Sanfrancisco</option>
+								<option value="newmexico">New_Mexico</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="center"><input type="button" value="Submit" id="submitButton"/></td>
+						<td align="center"><input type="button" value="Clear" id="clearButton"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
